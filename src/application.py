@@ -6,7 +6,7 @@ data = f.load_file('./src/heroes.csv')
 
 @application.route("/")
 def index():
-    return jsonifyy({"response":"PRUEBA DESPLIEGUE BLUE/GREEN"})
+    return jsonify({"response":"PRUEBA DESPLIEGUE BLUE/GREEN"})
 
 @application.route("/<string:id>")
 def heroe(id):
